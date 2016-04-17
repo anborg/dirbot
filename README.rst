@@ -6,6 +6,24 @@ This is a Scrapy project to scrape websites from public web directories.
 
 This project is only meant for educational purposes.
 
+======
+Changes
+======
+Cloned this project to illustrate how to use store data in ElasticSearch with `scrapy-elasticsearch`_
+
+.. _scrapy-elasticsearch: https://github.com/knockrentals/scrapy-elasticsearch
+
+How to run
+=====
+- pip install -r requirements.txt
+- docker pull elasticsearc
+- docker run -it -p 9200:9200 elasticsearch
+- Update elasticsearch server IP(s) in ELASTICSEARCH_SERVERS in settings.py
+- scrapy crawl doz
+
+Now you can see the result at: http://192.168.99.100:9200/scrapy/_search
+
+
 Items
 =====
 
