@@ -19,7 +19,7 @@ How to run
 - docker pull elasticsearc
 - docker run -it -p 9200:9200 elasticsearch
 - Update elasticsearch server IP(s) in ELASTICSEARCH_SERVERS in settings.py
-- scrapy crawl doz
+- scrapy crawl dmoz
 
 Now you can see the result at: http://192.168.99.100:9200/scrapy/_search
 
