@@ -6,9 +6,9 @@ DEFAULT_ITEM_CLASS = 'dirbot.items.Website'
 
 ITEM_PIPELINES = {'dirbot.pipelines.FilterWordsPipeline': 1}
 
-ITEM_PIPELINES = [
-    'scrapyelasticsearch.scrapyelasticsearch.ElasticSearchPipeline',
-]
+ITEM_PIPELINES = {
+    'scrapyelasticsearch.scrapyelasticsearch.ElasticSearchPipeline': 100
+}
 
 ELASTICSEARCH_SERVERS = ['http://192.168.99.100:9200']
 ELASTICSEARCH_INDEX = 'scrapy'
